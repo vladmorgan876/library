@@ -34,7 +34,7 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                    <p ><span style="color: red">{{\Illuminate\Support\Facades\Auth::user()->name}}</span> {{ __(', Вы вошли в систему') }} @role(['admin'])как администратор <p><a href="/">Главная</a></p>@endrole</p>
+                    <p ><span style="color: red">{{\Illuminate\Support\Facades\Auth::user()->name}}</span> {{ __(', Вы вошли в систему') }} @role(['admin'])на правах администратора <p><a href="{{route('FormControlData')}}">Страница контроля данных</a></p>@endrole
                 </div>
             </div>
         </div>
